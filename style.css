@@ -1,0 +1,152 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    background-image: url('source/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.game-container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 396px;
+    height: 661px;
+    position: relative; /* Needed for absolute positioning of elements */
+}
+
+#card-image-container {
+    width: 356px; /* Fixed width */
+    height: 445px; /* Fixed height */
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute; /* Position the image container */
+    top: 35%; /* Adjusted top position */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+    z-index: 0; /* Place behind the text */
+    /* opacity: 0.5;  Remove opacity */
+}
+
+#card-image {
+    width: 100%; /* Make the image fill the container width */
+    height: 100%; /* Make the image fill the container height */
+    object-fit: cover; /* Cover the entire container */
+    border-radius: 4px;
+}
+
+#name-input {
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+    display: none; /* Hide the input field */
+}
+
+#submit-button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    display: none; /* Hide the submit button */
+}
+
+#feedback-message {
+    margin-top: 8px;
+    font-weight: bold;
+    position: absolute; /* Position the feedback message */
+    bottom: 40px; /* Position at the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+#score-display {
+    margin-top: 8px;
+    position: absolute; /* Position the score display */
+    bottom: 10px; /* Position at the bottom */
+    right: 20px; /* Position at the right */
+    z-index: 2; /* Place above the image */
+}
+
+#progress-display {
+    margin-top: 8px;
+    position: absolute; /* Position the progress display */
+    bottom: 10px; /* Position at the bottom */
+    left: 20px; /* Position at the left */
+    z-index: 2; /* Place above the image */
+}
+
+#images-label {
+    font-size: 3em; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: absolute; /* Position the label */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+    z-index: 1; /* Place above the image */
+}
+
+#choices-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    position: absolute; /* Position the choices container */
+    bottom: 100px; /* Position above the score button */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+.choice-button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #8FBC8F; /* Changed button color */
+    color: white; /* Changed button text color */
+    border: none; /* Removed border */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer;
+    width: auto; /* Let the width adjust automatically */
+}
+
+.choice-button:hover {
+    background-color: #6B8E23; /* Changed hover color */
+}
+
+.choice-button.selected {
+    border: 2px solid #000; /* Add a border to selected buttons */
+}
+
+#score-button {
+    padding: 10px 20px;
+    background-color: #8FBC8F; /* Changed button color */
+    color: white; /* Changed button text color */
+    border: none; /* Removed border */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer;
+    position: absolute; /* Position the score button */
+    bottom: 20px; /* Position at the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+#score-button:hover {
+    background-color: #6B8E23; /* Changed hover color */
+}
