@@ -190,7 +190,7 @@ function endGame() {
     nameInput.style.display = 'none';
     submitButton.style.display = 'none';
     choicesContainer.innerHTML = ''; // Clear choices
-    feedbackMessage.textContent = `Game Over! Your final score is: ${score}/${totalCards}`;
+    feedbackMessage.textContent = `Your final score is: ${score}/${totalCards}`;
     feedbackMessage.style.color = 'blue';
     progressDisplay.textContent = '';
 }
