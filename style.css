@@ -130,23 +130,20 @@ body {
     background-color: #6B8E23; /* Changed hover color */
 }
 
-.choice-button.selected {
-    border: 2px solid #000; /* Add a border to selected buttons */
-}
-
-#score-button {
+/* Remove score button styling */
+/* #score-button {
     padding: 10px 20px;
-    background-color: #8FBC8F; /* Changed button color */
-    color: white; /* Changed button text color */
-    border: none; /* Removed border */
-    border-radius: 20px; /* Rounded corners */
+    background-color: #8FBC8F;
+    color: white;
+    border: none;
+    border-radius: 20px;
     cursor: pointer;
-    position: absolute; /* Position the score button */
-    bottom: 20px; /* Position at the bottom */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #score-button:hover {
-    background-color: #6B8E23; /* Changed hover color */
-}
+    background-color: #6B8E23;
+} */

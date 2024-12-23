@@ -5,7 +5,7 @@ const feedbackMessage = document.getElementById('feedback-message');
 const scoreDisplay = document.getElementById('score-display');
 const progressDisplay = document.getElementById('progress-display');
 const choicesContainer = document.getElementById('choices-container'); // Get the choices container
-const scoreButton = document.getElementById('score-button'); // Get the score button
+// const scoreButton = document.getElementById('score-button'); // Remove score button
 
 let currentCardIndex = 0;
 let score = 0;
@@ -197,6 +197,6 @@ function endGame() {
 
 fetchData();
 
-scoreButton.addEventListener('click', () => {
-    alert(`Your current score is: ${score}`);
-});
+// scoreButton.addEventListener('click', () => { // Remove score button event listener
+//     alert(`Your current score is: ${score}`);
+// });
