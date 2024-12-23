@@ -186,7 +186,7 @@ function checkAnswer(selectedChoices, correctNames) {
 }
 
 function endGame() {
-    cardImage.src = '';
+    cardImage.src = 'source/background.png'; // Set the background image as the end image
     nameInput.style.display = 'none';
     submitButton.style.display = 'none';
     choicesContainer.innerHTML = ''; // Clear choices
